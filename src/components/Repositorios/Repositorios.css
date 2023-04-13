@@ -1,0 +1,123 @@
+.repositorios-container {
+  margin-top: 50px;
+}
+.repos-content{
+  width: 70vw;
+  height: 100%;
+  background-color: var(--boxColor);
+  display: flex;
+  align-items: stretch;
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 20px;
+  flex-wrap: wrap ;
+  justify-content: center;
+  
+}
+.repos-content .repos-item{
+  background-color: var(--boxItens);
+  flex-grow: 1;
+  border-radius: 10px;
+  width: 200px;  
+  height: 200px;
+  margin:5px 10px;
+  padding: 20px 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  min-width: 200px;
+  max-width: 500px;
+}
+.repos-content .more-repos-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: var(--boxItens);
+  min-width: 100px;
+  max-width: 400px;
+  margin: 5px 10px; 
+}
+.repos-item-tittle{
+  font-family: 'Manroupe',sans-serif;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+.listaLinguagens .linguagens{
+  list-style: none;
+  text-align: justify;
+  padding-left: 15%;
+  margin-bottom: 10px;
+  
+}
+.update{
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 10px 0px;
+}
+.update p{
+  margin: 0;
+  font-variant: small-caps;
+  font-weight: 200;
+}
+.update .date{
+  font-weight: 400;
+}
+.repos-item a{
+  display: grid;
+  background-color: var(--greenMain);
+  width: 40%;
+  margin: 0 auto;
+  text-decoration: none;
+  color: var(--mainFont);
+  border-radius: 10px;
+  padding: 5px 0;
+  transition: all 0.5s;
+}
+.repos-item a i{
+  font-size: 1.5rem;
+}
+.more-repos-item a {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  color: var(--mainFont);
+  text-decoration: none;
+  
+}
+.repos-item a:hover{
+  background-color: var(--mainFont);
+  color: var(--greenMain);
+  box-shadow: var(--mainFont) 0 0 10px 0px;
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 450px) {
+  .repos-content{
+    width: 100vw;    
+  }
+  .repos-content .more-repos-item{
+    width: 100%;
+    display: grid;
+  }
+  .more-repos-item a{
+    width: 100%;
+    height: 100%;
+    transition: none;
+  }
+  .repos-item a{
+    width: 100%;
+    height: 50px;
+    transition: none;
+    align-items: center;
+  }
+  .repos-item a:hover{
+    box-shadow: none;
+    transform: none;
+    background-color: var(--greenMain);
+    color: var(--mainFont);
+  }
+}

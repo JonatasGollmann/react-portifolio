@@ -1,0 +1,39 @@
+.projetos-container{
+    margin-top: 50px;
+}
+.projetos-content{
+    background-color: var(--boxColor);
+    width: 70vw;
+    height: 100%;
+    border-radius: 20px;
+    font-size: 3rem;
+    font-family: 'Manroupe',sans-serif;
+    font-weight: 800;
+    letter-spacing: 5px;
+    display: grid;
+}
+.projeto-none{
+    color: var(--greenMain);
+    margin: 50px auto;
+}
+.projetos-mobile{
+    display: none;
+}
+@media screen and (max-width: 450px) {
+    .projetos-container{
+        margin-top: 100px;
+    }
+    .projetos-content{
+        width: 100vw;
+        padding: 20px 0;
+    }
+    .projeto-none{
+        font-size: 30px;
+    }
+    .projetos-mobile{
+        display: block;
+        margin: 20px 10px -15px 10px;
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+}

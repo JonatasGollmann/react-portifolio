@@ -1,0 +1,12 @@
+#themeSwitcher{
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    background-color: var(--greenSecun);
+    color: var(--mainFont);
+   position: fixed;
+   bottom: 20px;
+   right: 20px;
+   box-shadow: 0px 0px 10px var(--greenSecun);
+}

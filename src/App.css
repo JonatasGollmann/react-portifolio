@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;600&family=Outfit:wght@200;400;900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Outfit', sans-serif;
+  color: var(--mainFont);
+  box-sizing: border-box;
+}
+body.dark{
+  background-image: url(./assets/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  
+  --boxColor: #212121;
+  --boxItens: #404040;
+
+  --greenMain: #078c4e;
+  --greenSecun: #0d734d66;
+
+  --mainFont: #d9d9d9;
+  --secunFont: #d3d3d3;
+}
+body.light{
+  --backGround: #d9d9d9;
+  --boxColor: #cfcfcf;
+  --boxItens: #dfdfdf;
+
+  --greenMain: #078c4e;
+  --greenSecun: #0d734d66;
+
+  --mainFont: #262626;
+  --secunFont: #212121;
+}
+
+.App{
+  background-color: var(--backGround);
+  background-image: url(./assets/Icones.png);
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.tittle {
+  font-weight: 200;
+  letter-spacing: 5px;
+  margin-bottom: 20px;
+}
+::-webkit-scrollbar{
+  background-color: var(--boxItens);
+  width: 10px;
+ 
+}
+::-webkit-scrollbar-thumb{
+  background-color: var(--greenMain);
+  border-radius: 100px;
+}
+@media screen and (max-width: 450px) {
+  :root{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+  }
+  
+  .body{
+    margin: 0;
+    padding: 0;
+  }
+  .App{
+    background-image: none;
+  
+  }
+}

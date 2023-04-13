@@ -1,0 +1,120 @@
+.rodape-container{
+    margin-top: 50px;
+    
+}
+.rodape-content{
+    color: var(--mainFont);
+    width: 70vw;
+    height: 150px;
+    display: flex; 
+    background-color: var(--boxColor);
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px 20px 0 0;
+    padding: 50px 100px;
+    box-sizing: border-box;
+}
+.rodape-content img{  
+    width: 50px;
+    position: absolute;
+    left: 48%;
+    
+}
+.text .text-inicial{
+    font-size: 1.5rem;
+    text-align: start;
+    font-weight: 900;
+    letter-spacing: 4px;
+}
+.text .text-secund{
+    color: var(--greenMain);
+    letter-spacing: 7px;
+    text-align: justify;
+    padding-left: 2px;
+}
+.contact-button{
+    background-color: var(--boxItens);
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    color: var(--greenMain);
+    text-decoration: none;
+    transition: all 0.5s;
+}
+.contact-button p, .contact-button i{
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+.contact-button p{
+    margin-right: 20px;
+}
+
+.contact-button:hover{
+    color: var(--boxItens);
+    background-color: var(--greenMain);
+    transform: scale(1.05);
+}
+@media screen and (max-width: 450px) {
+    .rodape-container{
+        margin-top: 100px;
+    }
+    .rodape-content{
+        width: 100vw;
+        flex-direction: column;
+        height: 100%;
+        padding: 20px 30px;
+    }
+    .rodape-content img{
+        position: static;
+    }
+    .text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .text .text-inicial{
+        font-size: 18px;
+        margin-top: 20px;
+        text-align: center;
+        
+    }
+    .text .text-secund{
+        font-size: 14px;
+        text-align: center;
+        margin-top: 10px;
+        letter-spacing: 4px;
+    }
+    .contact-button{
+        margin-top: 30px;
+    }
+    .contact-button p{
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .contact-button i{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .rodape-content{
+        padding: 20px;
+    }
+    .text .text-inicial{
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+        text-align: left;
+    }
+    .text .text-secund{
+        font-size: 1rem;
+        letter-spacing: 5px;
+        text-align: left;
+    }
+    .contact-button:hover{
+        color: var(--greenMain);
+        background-color: var(--boxItens);
+        transform: scale(1.05);
+    }
+}

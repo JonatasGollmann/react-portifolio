@@ -1,0 +1,80 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100vh;
+  line-height: 0.8;
+}
+.home-content .name {
+  letter-spacing: 5px;
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Manrope", sans-serif;
+}
+.home-content .portifolio {
+  font-size: 100px;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+.home-content .desc-portifolio {
+  font-family: "Manrope", sans-serif;
+  margin-left: 12px;
+  font-weight: 200;
+  letter-spacing: 12px;
+  color: var(--greenMain);
+  font-size: 24px;
+  text-shadow: 0px 0px 6px var(--greenSecun);
+}
+.mouse {
+  color: var(--greenMain);
+  filter: blur();
+  text-shadow: 0px 0px 6px var(--greenSecun);
+}
+.mouse p {
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+#slide{
+  display: none;
+}
+.mouse .ri-mouse-line {
+  font-size: 2.5rem;
+}
+.mouse .mouse-linhas {
+  display: flex;
+  flex-direction: column;
+  line-height: 6px;
+}
+@media screen and (max-width: 450px) {
+  .home-content .name{
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+  .home-content .portifolio{
+    font-size: 50px
+  }
+  .home-content .desc-portifolio{
+    font-size: 14px;
+    letter-spacing: 5px;
+    margin-left: 0;
+  }
+  .mouse .ri-mouse-line{
+    display: none;
+  }
+  .mouse p{
+    font-size: 12px;
+  }
+  #slide{
+    display: block;
+  }
+  #scroll{
+    display: none;
+  } 
+  .mouse .mouse-linhas{
+    font-size: 20px;
+    line-height: 0.5;
+  }
+}

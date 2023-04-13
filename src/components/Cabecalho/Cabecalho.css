@@ -1,0 +1,42 @@
+.cabecalho {
+  width: 100w;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+}
+.barraNav {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  width: 75%;
+}
+.barraItem {
+  margin: 0 2%;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: var(--mainFont);
+  font-weight: 200;
+  letter-spacing: 1.5px;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.5s;
+}
+.barraItem:nth-child(2) {
+  margin-right: 5%;
+}
+.barraItem:nth-child(3) {
+  margin-left: 5%;
+}
+.barraItem:hover {
+  background-color: var(--greenSecun);
+ 
+}
+@media screen and (max-width: 450px) {
+  .cabecalho{
+    display: none;
+    
+  }.barraNav{
+    width: 0
+    ;
+  }
+}
